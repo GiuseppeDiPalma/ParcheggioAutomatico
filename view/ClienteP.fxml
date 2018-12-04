@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.ClientePanelController">
+   <children>
+      <Label alignment="CENTER" layoutX="59.0" layoutY="183.0" text="Nome:" />
+      <TextField fx:id="nomeCliente" layoutX="177.0" layoutY="179.0" promptText="Inserire Nome" />
+      <Label alignment="CENTER" layoutX="59.0" layoutY="213.0" prefHeight="17.0" prefWidth="55.0" text="Cognome:" />
+      <TextField fx:id="cognomeCliente" layoutX="177.0" layoutY="209.0" promptText="Inserire cognome" />
+      <Label alignment="CENTER" layoutX="59.0" layoutY="274.0" text="Tipologia Veicolo:" />
+      <Label alignment="CENTER" layoutX="60.0" layoutY="242.0" text="Targa:" />
+      <TextField fx:id="targaCliente" layoutX="177.0" layoutY="238.0" promptText="campo obbligatorio" />
+      <Label alignment="CENTER" layoutX="59.0" layoutY="308.0" text="Ora entrata:" />
+      <Label alignment="CENTER" layoutX="59.0" layoutY="342.0" text="Ora uscita:" />
+      <Button fx:id="indietroButton" layoutX="52.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleIndietroButton" text="Indietro" />
+      <Button fx:id="avantiButton" layoutX="244.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleAvantiButton" text="Prenota" />
+      <ComboBox fx:id="categoriaVeicoli" layoutX="176.0" layoutY="270.0" prefWidth="150.0" promptText="Scegli categoria" />
+      <ComboBox fx:id="oraEntrata" layoutX="290.0" layoutY="305.0" prefHeight="25.0" prefWidth="61.0" promptText="HH" />
+      <ComboBox fx:id="oraUscita" layoutX="290.0" layoutY="339.0" prefHeight="25.0" prefWidth="61.0" promptText="HH" />
+      <DatePicker fx:id="dataEntrata" layoutX="176.0" layoutY="306.0" prefHeight="25.0" prefWidth="105.0" />
+      <DatePicker fx:id="dataUscita" layoutX="176.0" layoutY="339.0" prefHeight="25.0" prefWidth="105.0" />
+      <Label fx:id="stampaCosto" alignment="CENTER" layoutX="110.0" layoutY="379.0" text="Anteprima Costo" textFill="#1d00ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="costoButton" layoutX="228.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleCalcolaCosto" text="Calcola" />
+      <ComboBox fx:id="sceltaDestinazione" layoutX="122.0" layoutY="53.0" prefWidth="150.0" promptText="Località" />
+      <Label layoutX="143.0" layoutY="23.0" text="Scegli la tua località:" />
+      <Label layoutX="59.0" layoutY="89.0" text="Parcheggio vicino disponibile:" />
+      <Label fx:id="parcheggioDisponibile" layoutX="252.0" layoutY="85.0" textFill="#4400ff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="trovaParcheggio" contentDisplay="CENTER" layoutX="131.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleTrovaParcheggio" text="Ricerca Parcheggio" />
+      <Label fx:id="indirizzoParcheggio" alignment="CENTER" layoutX="-8.0" layoutY="111.0" prefHeight="26.0" prefWidth="394.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="email" layoutX="81.0" layoutY="413.0" mnemonicParsing="false" text="Email" />
+      <RadioButton fx:id="sms" layoutX="156.0" layoutY="413.0" mnemonicParsing="false" text="Sms" />
+      <RadioButton fx:id="chiamata" layoutX="220.0" layoutY="413.0" mnemonicParsing="false" text="Chiamata" />
+   </children>
+</Pane>

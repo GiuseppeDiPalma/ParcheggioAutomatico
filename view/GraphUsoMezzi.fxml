@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BarChart fx:id="statisticheChart" title="Uso Mezzi" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.UsoMezziGraph">
+  <xAxis>
+    <CategoryAxis label="categoria" side="BOTTOM" fx:id="x" />
+  </xAxis>
+  <yAxis>
+    <NumberAxis fx:id="y" label="numero" side="LEFT" />
+  </yAxis>
+</BarChart>

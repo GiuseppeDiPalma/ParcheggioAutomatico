@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.ModificaCostoController">
+   <children>
+      <ComboBox fx:id="sceltaParcheggio" layoutX="214.0" layoutY="299.0" prefHeight="25.0" prefWidth="65.0" />
+      <Button fx:id="invio" layoutX="162.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleInvio" text="Invio" />
+      <Label alignment="CENTER" layoutX="29.0" layoutY="303.0" text="Scelta parcheggio da modificare:" />
+      <RadioButton fx:id="suv" layoutX="73.0" layoutY="354.0" mnemonicParsing="false" text="Suv" />
+      <RadioButton fx:id="utilitaria" layoutX="133.0" layoutY="354.0" mnemonicParsing="false" text="Utilitaria" />
+      <RadioButton fx:id="motoveicolo" layoutX="218.0" layoutY="354.0" mnemonicParsing="false" text="Motoveicolo" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="331.0" text="Quale categoria vuoi cambiare prezzo:" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="382.0" text="Digita nuovo prezzo:" />
+      <TextField fx:id="costoAumento" layoutX="198.0" layoutY="405.0" />
+      <Button fx:id="root" layoutX="58.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleIndietro" text="Indietro" />
+      <Button fx:id="stampaPrezzo" layoutX="296.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleStampaPrezzoAttuale" text="Stampa" />
+      <Label layoutX="29.0" layoutY="409.0" text="Prezzo attuale:" />
+      <Label fx:id="prezzoAttuale" layoutX="128.0" layoutY="409.0" textFill="#0d00ff" />
+      <ImageView fitHeight="265.0" fitWidth="331.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/modificaCosto.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

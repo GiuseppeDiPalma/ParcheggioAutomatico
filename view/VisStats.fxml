@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.AmministratoreVisStatsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="301.0" text="Che statistica vuoi visualizzare:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="usoData" contentDisplay="CENTER" layoutX="136.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleUsoDataButton" text="Grafico Uso Data" />
+      <Button fx:id="usoParcheggio" contentDisplay="CENTER" layoutX="119.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleUsoParcheggioButton" text="Grafico Uso Parcheggio" />
+      <Button fx:id="usoMezzi" contentDisplay="CENTER" layoutX="133.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleUsoMezzi" text="Grafico Uso Mezzi" />
+      <ImageView fitHeight="292.0" fitWidth="346.0" layoutX="16.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/statisticheimage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="root" layoutX="50.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleIndietro" text="Indietro" />
+   </children>
+</Pane>

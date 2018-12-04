@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.EmailPrenotazioneController">
+   <children>
+      <Label alignment="CENTER" layoutX="79.0" layoutY="27.0" text="Email - Immetti la tua mail:" />
+      <TextField fx:id="emailField" layoutX="73.0" layoutY="63.0" prefHeight="25.0" prefWidth="154.0" promptText="esempio@gmail.com" />
+      <Button fx:id="prenota" contentDisplay="CENTER" layoutX="121.0" layoutY="103.0" mnemonicParsing="false" onAction="#handlePrenota" text="Prenota" />
+   </children>
+</Pane>

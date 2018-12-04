@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BarChart fx:id="statisticheChart" title="Date più richieste" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.UsoDataGraph">
+  <xAxis>
+    <CategoryAxis label="data" side="BOTTOM" fx:id="x" />
+  </xAxis>
+  <yAxis>
+    <NumberAxis fx:id="y" label="occupazione" side="LEFT" />
+  </yAxis>
+</BarChart>

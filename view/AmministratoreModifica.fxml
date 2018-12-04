@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.AmministratoreModificaController">
+   <children>
+      <Button fx:id="modificaCosto" layoutX="139.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleModificaCosto" text="Modifica Tariffa" />
+      <Label layoutX="123.0" layoutY="273.0" text="Pannello Amministratore" />
+      <ImageView fitHeight="268.0" fitWidth="341.0" layoutX="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/imgModifica.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="visualizzaStatistiche" layoutX="126.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleVisualizzaStatistiche" text="Visualizza Statistiche" />
+      <Label layoutX="139.0" layoutY="290.0" text="Cosa vuoi fare?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" layoutX="162.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+   </children>
+</Pane>

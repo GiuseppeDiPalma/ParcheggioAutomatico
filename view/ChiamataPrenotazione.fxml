@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.ChiamataPrenotazioneController">
+   <children>
+      <Label alignment="CENTER" layoutX="61.0" layoutY="25.0" text="Chiamata - Immetti il tuo numero:" />
+      <TextField fx:id="numeroCell" layoutX="73.0" layoutY="63.0" prefHeight="25.0" prefWidth="154.0" promptText="Numero di telefono" />
+      <Button fx:id="prenota" contentDisplay="CENTER" layoutX="121.0" layoutY="103.0" mnemonicParsing="false" onAction="#handlePrenota" text="Prenota" />
+   </children>
+</Pane>

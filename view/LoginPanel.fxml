@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dipalma.parcheggioautomatico.view.LoginPanelController">
+   <children>
+      <HBox prefHeight="281.0" prefWidth="378.0">
+         <children>
+            <ImageView fitHeight="281.0" fitWidth="378.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/SceltaLogin.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="73.0" layoutY="14.0" prefHeight="41.0" prefWidth="233.0" text="Scegliere modalità d'accesso:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="clienteButton" contentDisplay="CENTER" layoutX="163.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleCliente" text="Cliente" />
+            <Button fx:id="amministratoreButton" alignment="CENTER" layoutX="140.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleAmministratore" text="Amministratore" />
+            <Button fx:id="checkOutButton" contentDisplay="CENTER" layoutX="137.0" layoutY="155.0" mnemonicParsing="false" onAction="#handlecheckOut" text="Paga Parcheggio" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
